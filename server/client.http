@@ -1,0 +1,14 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Doctor 1",
+  "email": "doctor1@example.com",
+  "password": "password123",
+  "role": "doctor",
+  "specialization": "Cardiology",
+  "availability": [
+    { "date": "2025-08-15", "timeSlots": ["09:00 AM", "11:00 AM"] },
+    { "date": "2025-08-20", "timeSlots": ["02:00 PM", "04:00 PM"] }
+  ]
+}
